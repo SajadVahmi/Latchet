@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DB7A3565-47A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D6ABE6AC-E2DE-4CC1-9C10-494A0CE1EF1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latchet.Domain", "src\Domain\Latchet.Domain\Latchet.Domain.csproj", "{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Latchet.Domain", "src\Domain\Latchet.Domain\Latchet.Domain.csproj", "{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
