@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DB7A3565-47A1-4693-A47F-8608995CE348}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D6ABE6AC-E2DE-4CC1-9C10-494A0CE1EF1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latchet.Domain", "src\Domain\Latchet.Domain\Latchet.Domain.csproj", "{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6ABE6AC-E2DE-4CC1-9C10-494A0CE1EF1F} = {DB7A3565-47A1-4693-A47F-8608995CE348}
+		{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A} = {D6ABE6AC-E2DE-4CC1-9C10-494A0CE1EF1F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E4BCE3C-8A95-4B67-A372-8173F5CCC226}
+	EndGlobalSection
+EndGlobal
