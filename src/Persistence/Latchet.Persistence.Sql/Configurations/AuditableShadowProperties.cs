@@ -49,7 +49,7 @@ namespace Latchet.Persistence.Sql.Configurations
 
 
         }
-        public static void AddBusinessId(this ModelBuilder modelBuilder)
+        public static void AddId(this ModelBuilder modelBuilder)
         {
             foreach (var entityType in modelBuilder.Model
                                                    .GetEntityTypes()
@@ -57,7 +57,7 @@ namespace Latchet.Persistence.Sql.Configurations
                                                         typeof(Entity).IsAssignableFrom(e.ClrType)))
             {
                 modelBuilder.Entity(entityType.ClrType)
-                    .Property<Id>("BusinessId").HasConversion(c => c.Value, d => Id.FromGuid(d))
+                    .Property<Id>("Id").HasConversion(c => c.Value, d => Id.FromGuid(d))
                     .IsUnicode()
                     .IsRequired();
             }
