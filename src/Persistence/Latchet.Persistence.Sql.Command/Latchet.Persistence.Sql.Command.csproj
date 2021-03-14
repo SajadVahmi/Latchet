@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructures\Events\Latchet.Infrastructures.Events.Outbox\Latchet.Infrastructures.Events.Outbox.csproj" />
+    <ProjectReference Include="..\Latchet.Persistence.ChangeInterceptors\Latchet.Persistence.ChangeInterceptors.csproj" />
+    <ProjectReference Include="..\Latchet.Persistence.Sql\Latchet.Persistence.Sql.csproj" />
+  </ItemGroup>
+
+</Project>

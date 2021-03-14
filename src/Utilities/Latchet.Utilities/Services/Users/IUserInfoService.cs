@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Latchet.Utilities.Users
+namespace Latchet.Utilities.Services.Users
 {
     public interface IUserInfoService
     {

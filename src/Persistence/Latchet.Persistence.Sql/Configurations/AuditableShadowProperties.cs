@@ -1,6 +1,7 @@
 ﻿using Latchet.Domain.Entities;
 using Latchet.Domain.ValueObjects;
-using Latchet.Utilities.Users;
+using Latchet.Utilities.Services.Users;
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
