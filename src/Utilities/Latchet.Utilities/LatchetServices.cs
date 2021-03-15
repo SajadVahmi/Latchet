@@ -1,4 +1,10 @@
-﻿using System;
+﻿using Latchet.Utilities.Services.Caching;
+using Latchet.Utilities.Services.JsonSerializers;
+using Latchet.Utilities.Services.ObjectMappers;
+using Latchet.Utilities.Services.Translations;
+using Latchet.Utilities.Services.Users;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +21,7 @@ namespace Latchet.Utilities
         public readonly IJsonSerializer Serializer;
         public readonly IUserInfoService UserInfoService;
 
-        public ZaminServices(ITranslator translator,
+        public LatchetServices(ITranslator translator,
                 ILoggerFactory loggerFactory,
                 IJsonSerializer serializer,
                 IUserInfoService userInfoService,

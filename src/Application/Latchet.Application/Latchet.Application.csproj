@@ -4,4 +4,14 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.5.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Latchet.Domain\Latchet.Domain.csproj" />
+    <ProjectReference Include="..\..\Utilities\Latchet.Utilities\Latchet.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
