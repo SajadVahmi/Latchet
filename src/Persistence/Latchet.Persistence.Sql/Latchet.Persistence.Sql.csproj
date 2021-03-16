@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\Latchet.Domain\Latchet.Domain.csproj" />
+    <ProjectReference Include="..\..\Application\Latchet.Application\Latchet.Application.csproj" />
   </ItemGroup>
 
 </Project>

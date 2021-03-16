@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Utilities\Latchet.Utilities\Latchet.Utilities.csproj" />
+    <ProjectReference Include="..\..\..\Application\Latchet.Application\Latchet.Application.csproj" />
   </ItemGroup>
 
 </Project>
