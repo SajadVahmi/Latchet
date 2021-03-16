@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Latchet.Persistence.Sql.Que
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{3D067E0C-452F-4DFA-927E-538E381A57BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latchet.Application", "src\Application\Latchet.Application\Latchet.Application.csproj", "{855A1C25-BBD0-47BD-992A-2001C46295F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Latchet.Application", "src\Application\Latchet.Application\Latchet.Application.csproj", "{855A1C25-BBD0-47BD-992A-2001C46295F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messaging", "Messaging", "{45D13D2C-0E7C-4D2E-AE27-305CCA834B62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,7 @@ Global
 		{59360EC2-0755-45CB-9C44-307027E6DF37} = {155C70F2-CFF5-41C0-84CB-3A97F8A83D71}
 		{3D067E0C-452F-4DFA-927E-538E381A57BA} = {DB7A3565-47A1-4693-A47F-8608995CE348}
 		{855A1C25-BBD0-47BD-992A-2001C46295F5} = {3D067E0C-452F-4DFA-927E-538E381A57BA}
+		{45D13D2C-0E7C-4D2E-AE27-305CCA834B62} = {F9E6BB8E-714B-4E8A-9C7A-94EBB355D42F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E4BCE3C-8A95-4B67-A372-8173F5CCC226}
