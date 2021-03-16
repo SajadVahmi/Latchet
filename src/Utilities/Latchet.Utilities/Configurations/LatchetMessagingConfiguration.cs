@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Latchet.Utilities.Configurations
 {
    
-    public class MessageBus
+    public class LatchetMessageBusConfiguration
     {
         public bool Enabled { get; set; }
         public string MessageBusTypeName { get; set; }

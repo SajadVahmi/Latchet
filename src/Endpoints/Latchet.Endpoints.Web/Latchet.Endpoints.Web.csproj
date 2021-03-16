@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="5.0.1" />
+    <PackageReference Include="Microsoft.OpenApi" Version="1.2.3" />
+    <PackageReference Include="Scrutor" Version="3.3.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="Serilog.Sinks.ElasticSearch" Version="8.4.1" />
+    <PackageReference Include="Serilog.Sinks.Http" Version="7.2.0" />
+    <PackageReference Include="Serilog.Sinks.MongoDB" Version="4.0.0" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="5.6.0" />
+    <PackageReference Include="Serilog.Sinks.RabbitMQ" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="5.0.0" />
+    <PackageReference Include="Serilog.Sinks.Telegram" Version="0.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.7" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Latchet.Application\Latchet.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\Events\Latchet.Infrastructures.Events.Outbox\Latchet.Infrastructures.Events.Outbox.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\Events\Latchet.InfrastructuresEvents.PullingPublisher\Latchet.InfrastructuresEvents.PullingPublisher.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\Messaging\Latchet.Infrastructures.Messaging.IdempotentConsumers.Store.Sql\Latchet.Infrastructures.Messaging.IdempotentConsumers.Store.Sql.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\Messaging\Latchet.Infrastructures.Messaging.IdempotentConsumers\Latchet.Infrastructures.Messaging.IdempotentConsumers.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\Messaging\Latchet.Infrastructures.Messaging.MessageBus.RabbitMq\Latchet.Infrastructures.Messaging.MessageBus.RabbitMq.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\Tools\Latchet.Infrastructures.Tools.Caching.Microsoft\Latchet.Infrastructures.Tools.Caching.Microsoft.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\Tools\Latchet.Infrastructures.Tools.Localizations.Microsoft\Latchet.Infrastructures.Tools.Localizations.Microsoft.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\Tools\Latchet.Infrastructures.Tools.Localizer.Parrot\Latchet.Infrastructures.Tools.Localizer.Parrot.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\Tools\Latchet.Infrastructures.Tools.ObjectMapper.AutoMapper\Latchet.Infrastructures.Tools.ObjectMapper.AutoMapper.csproj" />
+    <ProjectReference Include="..\..\Infrastructures\Tools\Latchet.Infrastructures.Tools.Serializer.NewtonSoft\Latchet.Infrastructures.Tools.Serializer.NewtonSoft.csproj" />
+    <ProjectReference Include="..\..\Persistence\Latchet.Persistence.ChangeInterceptors\Latchet.Persistence.ChangeInterceptors.csproj" />
+    <ProjectReference Include="..\..\Persistence\Latchet.Persistence.Sql.Command\Latchet.Persistence.Sql.Command.csproj" />
+    <ProjectReference Include="..\..\Persistence\Latchet.Persistence.Sql.Queries\Latchet.Persistence.Sql.Queries.csproj" />
+    <ProjectReference Include="..\..\Persistence\Latchet.Persistence.Sql\Latchet.Persistence.Sql.csproj" />
+  </ItemGroup>
+
+</Project>
