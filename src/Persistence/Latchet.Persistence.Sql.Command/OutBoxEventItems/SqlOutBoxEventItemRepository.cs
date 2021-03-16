@@ -12,9 +12,9 @@ namespace Latchet.Persistence.Sql.Command.OutBoxEventItems
 {
     public class SqlOutBoxEventItemRepository : IOutBoxEventItemRepository
     {
-        private readonly LatchetConfigurations _configurations;
+        private readonly LatchetConfiguration _configurations;
 
-        public SqlOutBoxEventItemRepository(LatchetConfigurations configurations)
+        public SqlOutBoxEventItemRepository(LatchetConfiguration configurations)
         {
             _configurations = configurations;
         }

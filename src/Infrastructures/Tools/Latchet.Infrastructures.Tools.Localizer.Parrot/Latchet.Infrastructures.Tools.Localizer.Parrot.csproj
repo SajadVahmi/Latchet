@@ -11,7 +11,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Application\Latchet.Application\Latchet.Application.csproj" />
-    <ProjectReference Include="..\Latchet.Messaging.IdempotentConsumers\Latchet.Messaging.IdempotentConsumers.csproj" />
   </ItemGroup>
 
 </Project>

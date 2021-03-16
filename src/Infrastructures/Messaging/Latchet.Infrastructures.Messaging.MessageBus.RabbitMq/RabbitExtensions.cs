@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Latchet.Messaging.MessageBus.RabbitMq
+namespace Latchet.Infrastructures.Messaging.MessageBus.RabbitMq
 {
     static class RabbitExtentsions
     {

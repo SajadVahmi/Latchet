@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Latchet.Messaging.IdempotentConsumers.Store.Sql
+namespace Latchet.Infrastructures.Messaging.IdempotentConsumers.Store.Sql
 {
     public class SqlMessageInboxItemRepository : IMessageInboxItemRepository
     {
         readonly string _connectionString;
-        public SqlMessageInboxItemRepository(LatchetConfigurations configurations)
+        public SqlMessageInboxItemRepository(LatchetConfiguration configurations)
         {
             _connectionString = configurations.Messageconsumer.SqlMessageInboxStore.ConnectionString;
         }

@@ -7,17 +7,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Latchet.Messaging.IdempotentConsumers
+namespace Latchet.Infrastructures.Messaging.IdempotentConsumers
 {
     public class IdempotentMessageConsumer : IMessageConsumer
     {
-        private readonly LatchetConfigurations latchetConfiguration;
+        private readonly LatchetConfiguration latchetConfiguration;
         private readonly IEventDispatcher eventDispatcher;
         private readonly IJsonSerializer jsonSerializer;
         private readonly ICommandDispatcher commandDispatcher;
         private readonly IMessageInboxItemRepository _messageInboxItemRepository;
         private readonly Dictionary<string, string> _messageTypeMap = new Dictionary<string, string>();
-        public IdempotentMessageConsumer(LatchetConfigurations hamoonConfigurations, IEventDispatcher eventDispatcher, IJsonSerializer jsonSerializer, ICommandDispatcher commandDispatcher, IMessageInboxItemRepository messageInboxItemRepository)
+        public IdempotentMessageConsumer(LatchetConfiguration hamoonConfigurations, IEventDispatcher eventDispatcher, IJsonSerializer jsonSerializer, ICommandDispatcher commandDispatcher, IMessageInboxItemRepository messageInboxItemRepository)
         {
             latchetConfiguration = hamoonConfigurations;
             this.eventDispatcher = eventDispatcher;

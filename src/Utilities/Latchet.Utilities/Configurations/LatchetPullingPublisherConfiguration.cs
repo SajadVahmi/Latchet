@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Latchet.Utilities.Configurations
 {
     
-    public class LatchetPullingPublisherConfigurations
+    public class LatchetPullingPublisherConfiguration
     {
         public bool Enabled { get; set; }
         public string OutBoxRepositoryTypeName { get; set; }

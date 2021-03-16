@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Latchet.Messaging.IdempotentConsumers
+namespace Latchet.Infrastructures.Messaging.IdempotentConsumers
 {
     public class MessageInboxItem
     {

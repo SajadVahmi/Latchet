@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Latchet.Utilities.Configurations
 {
-    public class LatchetConfigurations
+    public class LatchetConfiguration
     {
         public string ServiceId { get; set; } = "DefaultServiceName";
-        public LatchetPullingPublisherConfigurations PullingPublisher { get; set; }
+        public LatchetPullingPublisherConfiguration PullingPublisher { get; set; }
         public LatchetMessagingConfiguration Messageconsumer { get; set; }
         public EntityChangeInterception EntityChangeInterception { get; set; }
         public ApplicationEvents ApplicationEvents { get; set; }
+        public LatchetTranslatorConfiguration Translator { get; set; }
     }
 }

@@ -103,7 +103,7 @@ namespace Latchet.Persistence.Sql.Command
 
         private void beforeSaveTriggers()
         {
-            var _hamoonConfigurations = this.GetService<LatchetConfigurations>();
+            var _hamoonConfigurations = this.GetService<LatchetConfiguration>();
             setShadowProperties();
             if (_hamoonConfigurations.ApplicationEvents.TransactionalEventsEnabled)
                 addOutboxEvetItems();

@@ -13,11 +13,11 @@ namespace Latchet.InfrastructuresEvents.PullingPublisher
 {
     public class PoolingPublisherHostedService : IHostedService
     {
-        private readonly LatchetConfigurations _configuration;
+        private readonly LatchetConfiguration _configuration;
         private readonly IOutBoxEventItemRepository _outBoxEventItemRepository;
         private readonly IMessageBus _messageBus;
         private Timer _timer;
-        public PoolingPublisherHostedService(LatchetConfigurations configuration, IOutBoxEventItemRepository outBoxEventItemRepository, IMessageBus messageBus)
+        public PoolingPublisherHostedService(LatchetConfiguration configuration, IOutBoxEventItemRepository outBoxEventItemRepository, IMessageBus messageBus)
         {
             _configuration = configuration;
             _outBoxEventItemRepository = outBoxEventItemRepository;
