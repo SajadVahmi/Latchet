@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Latchet.Domain.Data
+namespace Latchet.Domain.Contracts.Data
 {
     public interface ICommandRepository<TEntity> : IUnitOfWork
         where TEntity : AggregateRoot

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Latchet.Domain.Data
+namespace Latchet.Domain.Contracts.Data
 {
-    public class PagedData
+    public interface IQueryRepository
     {
     }
 }

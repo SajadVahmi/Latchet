@@ -15,7 +15,7 @@ namespace Latchet.Domain.ValueObjects
         {
             if (string.IsNullOrWhiteSpace(value))
             {
-                throw new InvalidValueObjectStateException("ValidationErrorIsRequire", nameof(Id));
+                throw new InvalidValueObjectStateException("Value is required", nameof(Id));
             }
             if (Guid.TryParse(value, out Guid tempValue))
             {
@@ -23,7 +23,7 @@ namespace Latchet.Domain.ValueObjects
             }
             else
             {
-                throw new InvalidValueObjectStateException("ValidationErrorInvalidValue", nameof(Id));
+                throw new InvalidValueObjectStateException("Invalid value", nameof(Id));
             }
         }
         private Id()
