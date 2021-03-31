@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Latchet.Domain.Events
 {
-    public interface IDomainEvent:IEvent
+    public interface IEvent
     {
-
+        Guid EventId { get; }
+        //Guid CorrelationId  { get; }
+        DateTime PublishDateTime { get; }
     }
 }
