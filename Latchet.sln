@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D6ABE6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Latchet.Domain", "src\Domain\Latchet.Domain\Latchet.Domain.csproj", "{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{575DABCF-8359-4ED9-B093-CF2CFFB37AF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latchet.Application", "src\Application\Latchet.Application\Latchet.Application.csproj", "{74C8EF90-8D57-4F0D-B67B-3DA886F87376}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,10 @@ Global
 		{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C8EF90-8D57-4F0D-B67B-3DA886F87376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C8EF90-8D57-4F0D-B67B-3DA886F87376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C8EF90-8D57-4F0D-B67B-3DA886F87376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C8EF90-8D57-4F0D-B67B-3DA886F87376}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +34,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D6ABE6AC-E2DE-4CC1-9C10-494A0CE1EF1F} = {DB7A3565-47A1-4693-A47F-8608995CE348}
 		{2E702B8C-8BEF-4AF5-BDA5-3F553DD8F83A} = {D6ABE6AC-E2DE-4CC1-9C10-494A0CE1EF1F}
+		{575DABCF-8359-4ED9-B093-CF2CFFB37AF2} = {DB7A3565-47A1-4693-A47F-8608995CE348}
+		{74C8EF90-8D57-4F0D-B67B-3DA886F87376} = {575DABCF-8359-4ED9-B093-CF2CFFB37AF2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E4BCE3C-8A95-4B67-A372-8173F5CCC226}
