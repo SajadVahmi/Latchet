@@ -8,20 +8,20 @@ namespace Latchet.Application.Common
 {
     public abstract class ApplicationServiceResult : IApplicationServiceResult
     {
-        protected readonly List<string> _messages = new List<string>();
+        protected readonly List<string> messages = new List<string>();
 
-        public IEnumerable<string> Messages => _messages;
+        public IEnumerable<string> Messages => messages;
 
         public ApplicationServiceStatus Status { get; set; }
 
-        public void AddMessage(string error)
+        public void AddMessage(string message)
         {
-            _messages.Add(error);
+            messages.Add(message);
         }
 
         public void ClearMessages()
         {
-            _messages.Clear();
+            messages.Clear();
         }
     }
 }
