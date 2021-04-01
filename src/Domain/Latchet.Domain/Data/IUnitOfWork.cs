@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Latchet.Domain.Contracts.Data
+namespace Latchet.Domain.Data
 {
     public interface IUnitOfWork
     {
