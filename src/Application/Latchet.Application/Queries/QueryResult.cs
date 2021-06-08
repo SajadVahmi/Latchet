@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Latchet.Application.Queries
 {
-    public sealed class QueryResult<TData> : ApplicationServiceResult
+    public sealed class QueryResult<TData> : Result
     {
         internal TData data;
         public TData Data

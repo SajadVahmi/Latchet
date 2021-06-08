@@ -22,22 +22,22 @@ namespace Latchet.Application.Commands
         protected virtual Task<CommandResult<TData>> OkAsync(TData data)
         {
             result.data = data;
-            result.Status = ApplicationServiceStatus.Ok;
+            result.Status = ResultStatus.Ok;
             return Task.FromResult(result);
         }
         protected virtual CommandResult<TData> Ok(TData data)
         {
             result.data = data;
-            result.Status = ApplicationServiceStatus.Ok;
+            result.Status = ResultStatus.Ok;
             return result;
         }
-        protected virtual Task<CommandResult<TData>> ResultAsync(TData data, ApplicationServiceStatus status)
+        protected virtual Task<CommandResult<TData>> ResultAsync(TData data, ResultStatus status)
         {
             result.data = data;
             result.Status = status;
             return Task.FromResult(result);
         }
-        protected virtual CommandResult<TData> Result(TData data, ApplicationServiceStatus status)
+        protected virtual CommandResult<TData> Result(TData data, ResultStatus status)
         {
             result.data = data;
             result.Status = status;
@@ -63,22 +63,22 @@ namespace Latchet.Application.Commands
 
         protected virtual Task<CommandResult> OkAsync()
         {
-            result.Status = ApplicationServiceStatus.Ok;
+            result.Status = ResultStatus.Ok;
             return Task.FromResult(result);
         }
 
         protected virtual CommandResult Ok()
         {
-            result.Status = ApplicationServiceStatus.Ok;
+            result.Status = ResultStatus.Ok;
             return result;
         }
 
-        protected virtual Task<CommandResult> ResultAsync(ApplicationServiceStatus status)
+        protected virtual Task<CommandResult> ResultAsync(ResultStatus status)
         {
             result.Status = status;
             return Task.FromResult(result);
         }
-        protected virtual CommandResult Result(ApplicationServiceStatus status)
+        protected virtual CommandResult Result(ResultStatus status)
         {
             result.Status = status;
             return result;

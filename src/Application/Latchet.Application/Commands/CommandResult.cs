@@ -12,7 +12,7 @@ namespace Latchet.Application.Commands
     /// دلایل استفاده از این الگو و پیاده سازی کاملی از این الگو را در لینک زیر می‌توانید مشاهده کنید
     /// https://github.com/vkhorikov/CqrsInPractice
     /// </summary>
-    public class CommandResult : ApplicationServiceResult
+    public class CommandResult : Result
     {
 
     }

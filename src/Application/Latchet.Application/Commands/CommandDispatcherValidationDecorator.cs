@@ -36,7 +36,7 @@ namespace Latchet.Application.Commands
             return commandDispatcher.Send<TCommand, TData>(command);
         }
 
-        private TValidationResult Validate<TCommand, TValidationResult>(TCommand command) where TValidationResult : ApplicationServiceResult, new()
+        private TValidationResult Validate<TCommand, TValidationResult>(TCommand command) where TValidationResult : Result, new()
         {
             var validator = serviceProvider.GetService<IValidator<TCommand>>();
             if (validator != null)
@@ -45,7 +45,7 @@ namespace Latchet.Application.Commands
                 if (!validationResult.IsValid)
                 {
                     TValidationResult res = new TValidationResult();
-                    res.Status = ApplicationServiceStatus.ValidationError;
+                    res.Status = ResultStatus.ValidationError;
                     foreach (var item in validationResult.Errors)
                     {
                         res.AddMessage(item.ErrorMessage);

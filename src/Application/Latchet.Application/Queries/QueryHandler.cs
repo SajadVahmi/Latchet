@@ -15,14 +15,14 @@ namespace Latchet.Application.Queries
         protected readonly LatchetServices latchetServices;
         protected readonly QueryResult<TData> result = new QueryResult<TData>();
 
-        protected virtual Task<QueryResult<TData>> ResultAsync(TData data, ApplicationServiceStatus status)
+        protected virtual Task<QueryResult<TData>> ResultAsync(TData data, ResultStatus status)
         {
             result.data = data;
             result.Status = status;
             return Task.FromResult(result);
         }
 
-        protected virtual QueryResult<TData> Result(TData data, ApplicationServiceStatus status)
+        protected virtual QueryResult<TData> Result(TData data, ResultStatus status)
         {
             result.data = data;
             result.Status = status;
@@ -32,13 +32,13 @@ namespace Latchet.Application.Queries
 
         protected virtual Task<QueryResult<TData>> ResultAsync(TData data)
         {
-            var status = data != null ? ApplicationServiceStatus.Ok : ApplicationServiceStatus.NotFound;
+            var status = data != null ? ResultStatus.Ok : ResultStatus.NotFound;
             return ResultAsync(data, status);
         }
 
         protected virtual QueryResult<TData> Result(TData data)
         {
-            var status = data != null ? ApplicationServiceStatus.Ok : ApplicationServiceStatus.NotFound;
+            var status = data != null ? ResultStatus.Ok : ResultStatus.NotFound;
             return Result(data, status);
         }
 

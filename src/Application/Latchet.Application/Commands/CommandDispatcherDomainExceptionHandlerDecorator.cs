@@ -43,7 +43,7 @@ namespace Latchet.Application.Commands
 
         }
 
-        private Task<TCommandResult> DomainExceptionHandling<TCommand, TCommandResult>(DomainException ex) where TCommandResult : ApplicationServiceResult, new()
+        private Task<TCommandResult> DomainExceptionHandling<TCommand, TCommandResult>(DomainException ex) where TCommandResult : Result, new()
         {
             var type = typeof(TCommandResult);
             dynamic commandResult = new CommandResult();
@@ -56,7 +56,7 @@ namespace Latchet.Application.Commands
             else
                 commandResult.AddMessage(ex.Message);
 
-            commandResult.Status = ApplicationServiceStatus.DomainException;
+            commandResult.Status = ResultStatus.DomainException;
             return Task.FromResult(commandResult as TCommandResult);
         }
     }

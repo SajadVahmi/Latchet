@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Latchet.Application.Common
 {
-    public interface IApplicationServiceResult
+    public interface IResult
     {
         IEnumerable<string> Messages { get; }
-        ApplicationServiceStatus Status { get; set; }
+        ResultStatus Status { get; set; }
     }
 }

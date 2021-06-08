@@ -9,6 +9,6 @@ namespace Latchet.Domain.Entities
 {
     public class Entity:IAuditable
     {
-        public Id Id { get; set; }
+        public Id Id { get; protected set; }
     }
 }

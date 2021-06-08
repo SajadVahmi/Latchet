@@ -1,6 +1,6 @@
 ﻿namespace Latchet.Application.Common
 {
-    public enum ApplicationServiceStatus
+    public enum ResultStatus
     {
         Ok = 1,
         NotFound = 2,

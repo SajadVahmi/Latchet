@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Latchet.Application.Common
 {
-    public abstract class ApplicationServiceResult : IApplicationServiceResult
+    public abstract class Result : IResult
     {
         protected readonly List<string> messages = new List<string>();
 
         public IEnumerable<string> Messages => messages;
 
-        public ApplicationServiceStatus Status { get; set; }
+        public ResultStatus Status { get; set; }
 
         public void AddMessage(string message)
         {
