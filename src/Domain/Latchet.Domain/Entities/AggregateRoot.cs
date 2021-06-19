@@ -11,9 +11,11 @@ namespace Latchet.Domain.Entities
     {
         private List<IDomainEvent> uncommittedEvents;
         public IReadOnlyList<IDomainEvent> UncommittedEvents => uncommittedEvents.AsReadOnly();
+        public void ClearUncommittedEvents() => uncommittedEvents.Clear();
         public AggregateRoot()
         {
             uncommittedEvents = new List<IDomainEvent>();
         }
+
     }
 }

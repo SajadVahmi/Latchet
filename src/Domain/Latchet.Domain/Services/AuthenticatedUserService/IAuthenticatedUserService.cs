@@ -11,7 +11,7 @@ namespace Latchet.Domain.Services.AuthenticatedUserService
          
         string GetAgent();
         string GetIp();
-        int GetId();
+        string GetId();
 
         string GetFirstname();
         string GetLastname();
