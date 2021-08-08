@@ -14,6 +14,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Latchet.Domain.Services.Clock;
 
 namespace Latchet.Persistence.Sql.Commands.Dbcontexts
 {
@@ -57,6 +58,8 @@ namespace Latchet.Persistence.Sql.Commands.Dbcontexts
             return result;
         }
 
+
+
         private void beforeSaveTriggers()
         {
             cleanString();
@@ -94,6 +97,7 @@ namespace Latchet.Persistence.Sql.Commands.Dbcontexts
             var changedAggregates = ChangeTracker.GetAggregatesWithEvent();
             var userInfoService = this.GetService<IAuthenticatedUserService>();
             var jsonSerializer = this.GetService<IJsonSerializer>();
+            var clock = this.GetService<IClock>();
 
             foreach (var aggregate in changedAggregates)
             {
@@ -103,7 +107,7 @@ namespace Latchet.Persistence.Sql.Commands.Dbcontexts
                     var outboxItem = new OutboxItem();
                     outboxItem.EventId = @event.EventId;
                     outboxItem.AccuredByUserId = userInfoService.GetId();
-                    outboxItem.AccuredOn = DateTime.UtcNow;
+                    outboxItem.AccuredOn = clock.Now();
                     outboxItem.AggregateId = aggregate.Id.ToString();
                     outboxItem.AggregateName = aggregate.GetType().Name;
                     outboxItem.AggregateTypeName = aggregate.GetType().FullName;
@@ -116,14 +120,7 @@ namespace Latchet.Persistence.Sql.Commands.Dbcontexts
             }
         }
 
-        public static void AddRestrictDeleteBehaviorConvention(ModelBuilder modelBuilder)
-        {
-            IEnumerable<IMutableForeignKey> cascadeFKs = modelBuilder.Model.GetEntityTypes()
-                .SelectMany(t => t.GetForeignKeys())
-                .Where(fk => !fk.IsOwnership && fk.DeleteBehavior == DeleteBehavior.Cascade);
-            foreach (IMutableForeignKey fk in cascadeFKs)
-                fk.DeleteBehavior = DeleteBehavior.Restrict;
-        }
+        
 
     }
 }

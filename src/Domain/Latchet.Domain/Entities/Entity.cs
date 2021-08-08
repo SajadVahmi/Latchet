@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Latchet.Domain.Entities
 {
-    public class Entity:IAuditable
+    public class Entity<TKey>
     {
-        public Id Id { get; protected set; }
+        public TKey Id { get; protected set; }
     }
 }

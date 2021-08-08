@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Latchet.Domain.Entities
 {
-    public class AggregateRoot:Entity
+    public class  AggregateRoot<TKey>:Entity<TKey>
     {
         private List<IDomainEvent> uncommittedEvents;
         public IReadOnlyList<IDomainEvent> UncommittedEvents => uncommittedEvents.AsReadOnly();

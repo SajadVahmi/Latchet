@@ -17,7 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{7FA643BE-42B7-453A-8FF1-3250728D0EB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latchet.Persistence.Sql.Commands", "src\Persistence\Sql\Latchet.Persistence.Sql\Latchet.Persistence.Sql.Commands\Latchet.Persistence.Sql.Commands.csproj", "{40F8673C-0138-4E72-938A-5268AF496466}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Latchet.Persistence.Sql.Commands", "src\Persistence\Sql\Latchet.Persistence.Sql\Latchet.Persistence.Sql.Commands\Latchet.Persistence.Sql.Commands.csproj", "{40F8673C-0138-4E72-938A-5268AF496466}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5301CE27-5647-411A-87B9-A9F285B47C55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F4F8A2CF-2F4D-4AAF-8A67-4BDE59BC803D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,7 @@ Global
 		{9C52EC00-C04D-4DEB-9D06-C641F02E420A} = {DB7A3565-47A1-4693-A47F-8608995CE348}
 		{7FA643BE-42B7-453A-8FF1-3250728D0EB2} = {9C52EC00-C04D-4DEB-9D06-C641F02E420A}
 		{40F8673C-0138-4E72-938A-5268AF496466} = {7FA643BE-42B7-453A-8FF1-3250728D0EB2}
+		{F4F8A2CF-2F4D-4AAF-8A67-4BDE59BC803D} = {5301CE27-5647-411A-87B9-A9F285B47C55}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E4BCE3C-8A95-4B67-A372-8173F5CCC226}
