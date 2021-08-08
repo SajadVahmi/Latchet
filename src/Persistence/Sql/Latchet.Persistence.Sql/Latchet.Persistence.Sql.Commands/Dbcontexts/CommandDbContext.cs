@@ -108,7 +108,6 @@ namespace Latchet.Persistence.Sql.Commands.Dbcontexts
                     outboxItem.EventId = @event.EventId;
                     outboxItem.AccuredByUserId = userInfoService.GetId();
                     outboxItem.AccuredOn = clock.Now();
-                    outboxItem.AggregateId = aggregate.Id.ToString();
                     outboxItem.AggregateName = aggregate.GetType().Name;
                     outboxItem.AggregateTypeName = aggregate.GetType().FullName;
                     outboxItem.EventName = @event.GetType().Name;
