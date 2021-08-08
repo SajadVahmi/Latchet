@@ -26,9 +26,7 @@ namespace Latchet.Persistence.Sql.Commands.Configurations
             builder.HasKey(c => c.Id);
             builder.Property(c => c.AccuredByUserId).HasMaxLength(255);
             builder.Property(c => c.EventName).HasMaxLength(255);
-            builder.Property(c => c.AggregateName).HasMaxLength(255);
             builder.Property(c => c.EventTypeName).HasMaxLength(500);
-            builder.Property(c => c.AggregateTypeName).HasMaxLength(500);
         }
     }
 }
