@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5301CE27-5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F4F8A2CF-2F4D-4AAF-8A67-4BDE59BC803D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latchet.Persistence.Sql.Queries", "src\Persistence\Sql\Latchet.Persistence.Sql.Queries\Latchet.Persistence.Sql.Queries.csproj", "{FF9FF2BC-A1FB-44D0-B1F4-C43BC1D7909E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{40F8673C-0138-4E72-938A-5268AF496466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40F8673C-0138-4E72-938A-5268AF496466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40F8673C-0138-4E72-938A-5268AF496466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF9FF2BC-A1FB-44D0-B1F4-C43BC1D7909E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9FF2BC-A1FB-44D0-B1F4-C43BC1D7909E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9FF2BC-A1FB-44D0-B1F4-C43BC1D7909E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9FF2BC-A1FB-44D0-B1F4-C43BC1D7909E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +60,7 @@ Global
 		{7FA643BE-42B7-453A-8FF1-3250728D0EB2} = {9C52EC00-C04D-4DEB-9D06-C641F02E420A}
 		{40F8673C-0138-4E72-938A-5268AF496466} = {7FA643BE-42B7-453A-8FF1-3250728D0EB2}
 		{F4F8A2CF-2F4D-4AAF-8A67-4BDE59BC803D} = {5301CE27-5647-411A-87B9-A9F285B47C55}
+		{FF9FF2BC-A1FB-44D0-B1F4-C43BC1D7909E} = {7FA643BE-42B7-453A-8FF1-3250728D0EB2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E4BCE3C-8A95-4B67-A372-8173F5CCC226}
